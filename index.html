@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>INTECU</title>
 </head>
 
@@ -224,27 +224,103 @@
         </div>
     </div>
 
-        <div class="pre-div">
-            <h2>CONTACT</h2>
-            <div class="underline"></div>
-        </div>
-        
+    <div class="pre-div">
+        <h2>CONTACT</h2>
+        <div class="underline"></div>
+    </div>
 
-        <div class="container_7">
-            <div class="left">
-                <p>Ibadan, Oyo State, Nigeria</p>
-                <p><i class="fas fa-phone-alt"></i>985-245-1730</p>
-                <p><i class="fas fa-envelope"></i>ajayioluwapelumi920@gmail.com</p>
+
+    <div class="container_7">
+        <div class="left">
+            <p>Ibadan, Oyo State, Nigeria</p>
+            <p><i class="fas fa-phone-alt"></i>985-245-1730</p>
+            <p><i class="fas fa-envelope"></i>ajayioluwapelumi920@gmail.com</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Name" class="name" />
+            <input type="text" placeholder="Phone" class="phone" />
+            <input type="email" placeholder="Email address" class="email" />
+            <textarea placeholder="Message" class="message"></textarea>
+            <button type="submit">CONTACT US</button>
+        </form>
+    </div>
+
+
+    <footer class="footer" role="contentinfo" aria-label="KidKinder footer">
+        <div class="footer-column" style="max-width: 280px;">
+            <div class="logo-container">
+                <img src="https://storage.googleapis.com/a1aa/image/8f929081-8334-4bef-0877-5d3b6dc5319d.jpg"
+                    alt="KidKinder bear logo in teal color" width="32" height="32" />
+                <h2 class="logo-text">INTECU</h2>
             </div>
+            <p class="description">
+                INTECU excels at designing, installing and maintaining robust network infrastructure across university campuses, ensuring smooth digital learning and operations. We provide crucial technical support, secure networks, assist with upgrades and performance monitoring. 
+            </p>
+            <nav class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </nav>
+        </div>
+        <div class="footer-column" aria-labelledby="get-in-touch" style="min-width: 220px;">
+            <h3 id="get-in-touch" class="handwriting">Get In Touch</h3>
+            <ul class="contact-list">
+                <li>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <p class="contact-label">Address</p>
+                        <p class="contact-text">Beside faculty of Technology, Obafemi Awolowo University, Ile-Ife, Osun-State, Nigeria</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-text">info@intecu.com</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-text">+234 7033683400</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column" aria-labelledby="quick-links" style="min-width: 160px;">
+            <h3 id="quick-links" class="handwriting">Quick Links</h3>
+            <ul class="quick-links">
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">Home</a></li>
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">About Us</a></li>
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">Our Services</a></li>
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">Our Careers</a></li>
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">Our Blog</a></li>
+                <li><i class="fas fa-angle-right" aria-hidden="true"></i><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column newsletter" aria-labelledby="newsletter" style="min-width: 280px;">
+            <h3 id="newsletter" class="handwriting">Newsletter</h3>
             <form>
-                <input type="text" placeholder="Name" class="name" />
-                <input type="text" placeholder="Phone" class="phone" />
-                <input type="email" placeholder="Email address" class="email" />
-                <textarea placeholder="Message" class="message"></textarea>
-                <button type="submit">CONTACT US</button>
+                <input type="text" placeholder="Your Name" aria-label="Your Name" />
+                <input type="email" placeholder="Your Email" aria-label="Your Email" />
+                <button type="submit">Submit Now</button>
             </form>
         </div>
+        <button class="scroll-top" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+            type="button"
+            style="position: fixed; bottom: 24px; right: 24px; width: 48px; height: 56px; background-color: #1fa1d6; border-radius: 9999px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; cursor: pointer; border: none; transition: background-color 0.3s; z-index: 1000;"
+            onmouseover="this.style.backgroundColor='#1789a8'" onmouseout="this.style.backgroundColor='#1fa1d6'">
+            <i class="fas fa-chevron-up" aria-hidden="true"></i>
+        </button>
 
+        
+    </footer>
+
+    <div class="last-footer">
+        <p class="footer-text">© 2023 INTECU. All rights reserved. Designed by Oluwapelumi Ajayi | Powered by INTECU</p>
+    </div>
 
 
 
