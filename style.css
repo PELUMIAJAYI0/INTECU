@@ -624,11 +624,15 @@ p.description {
     font-family: 'Inter', sans-serif;
     color: white;
   }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 20px 64px;
-    text-align: center;
+
+  .container_6 h3{
+    color: #fbbf24;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .intro-text {
     max-width: 720px;
@@ -743,8 +747,8 @@ p.description {
     margin: 0 auto;
     padding: 40px 60px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 80px;
     max-width: 960px;
   }
@@ -771,7 +775,7 @@ p.description {
     font-size: 14px;
   }
   form {
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -819,6 +823,13 @@ p.description {
     letter-spacing: 0.05em;
     border-radius: 0 0 4px 4px;
     margin-top: 0;
+  }
+
+  button:hover {
+    background-color: #b93c1a;
+  }
+  button:active {
+    background-color: #0f1418;
   }
   @media (max-width: 768px) {
     .container_7 {
