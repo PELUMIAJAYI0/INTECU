@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-  background-color: #0f1418;
+  /* background-color: #0f1418; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@ nav {
 nav .logo {
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   user-select: none;
   text-decoration: none;
 }
@@ -27,23 +27,23 @@ nav .logo {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
 nav ul li a {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+text-decoration: none;
   color: #ef6f4a;
   font-size: 25px;
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition: color 0.3s ease, font-size 0.5s ease;
 }
 
 .menu-toggle {
