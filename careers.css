@@ -325,3 +325,108 @@ text-decoration: none;
       max-width: 100%;
     }
   }
+
+
+  .container_3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 16px;
+    text-align: center;
+  }
+
+  .container_3_h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fbbf24;
+    cursor: pointer;
+  }
+
+  .container_3_h2:hover{
+    color: #ef6f4a;
+    font-size: 45px;
+    transition: color 0.5s ease, font-size 0.5s ease;
+  }
+
+  .cards_3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .card {
+    background: #fff;
+    border-top: 4px solid;
+    padding: 32px 24px;
+    width: 320px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card .icon-wrapper {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+
+  .card .icon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #dff7ff;
+    z-index: 0;
+  }
+
+  .card img.icon {
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+  }
+
+  .card h3 {
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .card p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .card.health {
+    border-color: #00b4e6;
+  }
+
+  .card.annual {
+    border-color: #1aa9a9;
+  }
+
+  .card.pension {
+    border-color: #f89f1b;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 100%;
+      max-width: 320px;
+    }
+    .card p {
+      max-width: 100%;
+    }
+  }
