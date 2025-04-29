@@ -205,14 +205,10 @@ text-decoration: none;
       width: 20rem;
       height: 20rem;
     }
-    .container_1-right img.main-img {
+    /* .container_1-right img.main-img {
       width: 100%;
       height: auto;
-    }
-    .container_1-right img.bg-shape{
-      width: 22rem;
-      height: 22rem;
-    }
+    } */
   }
   .phone-btn {
     position: absolute;
