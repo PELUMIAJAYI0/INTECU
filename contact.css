@@ -277,3 +277,305 @@ text-decoration: none;
       max-width: 20rem;
     }
   }
+
+
+  .footer {
+    margin: 0 auto;
+    padding: 40px 48px 24px 48px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 48px;
+    position: relative;
+    margin: 0;
+    background-color: #0f1418;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 220px;
+  }
+  /* Logo and description */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+  .logo-container img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  .logo-text {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 280px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fbbf24;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+  }
+  .social-icons a:hover {
+    background-color: #1fa1d6;
+    color: white;
+  }
+  /* Handwriting font for headings */
+  .handwriting {
+    font-family: 'Indie Flower', cursive;
+    color: #fbbf24;
+    font-size: 20px;
+    margin: 0;
+    user-select: none;
+  }
+  /* Get In Touch */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .contact-list li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+  .contact-list li:last-child {
+    margin-bottom: 0;
+  }
+  .contact-list i {
+    color: #fbbf24;
+    margin-top: 4px;
+    min-width: 20px;
+    font-size: 18px;
+  }
+  .contact-label {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4px;
+    user-select: none;
+  }
+  .contact-text {
+    color: rgba(255 255 255 / 0.9);
+    margin: 0;
+  }
+  /* Quick Links */
+  .quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255 255 255 / 0.9);
+  }
+  .quick-links li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .quick-links li:last-child {
+    margin-bottom: 0;
+  }
+  .quick-links i {
+    color: #fbbf24;
+    font-size: 12px;
+    min-width: 12px;
+  }
+  .quick-links a {
+    color: rgba(255 255 255 / 0.9);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .quick-links a:hover {
+    color: #d35e3e;
+  }
+  /* Newsletter */
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+  }
+  .newsletter input[type="text"],
+  .newsletter input[type="email"] {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+  }
+  .newsletter input::placeholder {
+    color: #999;
+  }
+  .newsletter button {
+    background-color: #fbbf24;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
+  }
+  .newsletter button:hover {
+    background-color: #d35e3e;
+  }
+  /* Bottom bar */
+  .bottom-bar {
+    border-top: 1px solid rgba(255 255 255 / 0.1);
+    margin-top: 40px;
+    padding-top: 16px;
+    font-size: 12px;
+    color: rgba(255 255 255 / 0.8);
+    text-align: center;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+  }
+  .bottom-bar a {
+    color: #1fa1d6;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+  }
+  .bottom-bar a:hover {
+    text-decoration: underline;
+  }
+  /* Scroll to top button */
+  .scroll-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 56px;
+    background-color: #1fa1d6;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+  .scroll-top:hover {
+    background-color: #1789a8;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer {
+      flex-wrap: wrap;
+      padding: 32px 24px 24px 24px;
+      gap: 40px;
+    }
+    .footer-column {
+      min-width: 100%;
+    }
+    .description {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-column {
+      gap: 16px;
+    }
+    .logo-container img {
+      width: 24px;
+      height: 24px;
+    }
+    .logo-text {
+      font-size: 20px;
+    }
+    .handwriting {
+      font-size: 18px;
+    }
+    .contact-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .contact-list i {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+    .quick-links li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .scroll-top {
+    width: 40px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .scroll-top:hover {
+    background-color: #fbbf24;
+  }
+  .scroll-top:active {
+    background-color: #0f1418;
+  }
+
+  .last-footer {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+    margin: 0;
+    background-color: #0f1418;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .last-footer {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+    
+  }
+ 
