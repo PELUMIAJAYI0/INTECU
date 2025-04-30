@@ -28,3 +28,42 @@ form.addEventListener("submit", function (e) {
     successMessage.hidden = true;
   }, 4000);
 });
+
+
+const track = document.getElementById("testimonial-track");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const progressBar = document.getElementById("progress-bar");
+
+function scrollCarousel(direction) {
+  const cardWidth = track.querySelector(".testimonial-card").offsetWidth + 24;
+  track.scrollBy({ left: direction === "next" ? cardWidth : -cardWidth, behavior: "smooth" });
+  restartProgressBar();
+}
+
+function restartProgressBar() {
+  progressBar.style.transition = "none";
+  progressBar.style.width = "0%";
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      progressBar.style.transition = "width 6s linear";
+      progressBar.style.width = "100%";
+    });
+  });
+}
+
+// Event listeners
+nextBtn.addEventListener("click", () => scrollCarousel("next"));
+prevBtn.addEventListener("click", () => scrollCarousel("prev"));
+
+// Auto-scroll every 6s
+let autoScroll = setInterval(() => scrollCarousel("next"), 6000);
+restartProgressBar();
+
+// Pause on hover
+track.addEventListener("mouseenter", () => clearInterval(autoScroll));
+track.addEventListener("mouseleave", () => {
+  autoScroll = setInterval(() => scrollCarousel("next"), 6000);
+  restartProgressBar();
+});
+
