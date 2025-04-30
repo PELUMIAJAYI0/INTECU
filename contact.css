@@ -504,6 +504,168 @@ p.description {
   }
 }
 
+.cta-cards-section {
+  margin: 80px auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.cta-heading {
+  font-size: 28px;
+  margin-bottom: 32px;
+  color: #fbbf24;
+}
+
+.cta-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.cta-card {
+  background: #0f1418;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-6px);
+}
+
+.cta-card .icon {
+  font-size: 32px;
+  color: #fbbf24;
+  margin-bottom: 12px;
+}
+
+.cta-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.cta-card p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d92a26;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #b2221f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-card {
+    width: 100%;
+  }
+}
+
+
+.faq-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 1.5rem;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fbbf24;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: #fbbf24;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #ccc;
+}
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 12px;
+}
+
+
+.contact-info-box {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 1.5rem;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  background: #0f1418;
+  border-left: 4px solid #fbbf24;
+  padding-left: 24px;
+}
+
+.info-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #fbbf24;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-list i {
+  color: #fbbf24;
+}
+
+
 .map-section {
   padding: 30px 20px;
   border-radius: 15px;
