@@ -13,3 +13,18 @@ menuToggle.addEventListener('keydown', (e) => {
     }
 }
 );
+
+const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("form-success");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent actual submission
+
+  // Simulate a successful submission (you can replace this with real API call)
+  form.reset();
+  successMessage.hidden = false;
+
+  setTimeout(() => {
+    successMessage.hidden = true;
+  }, 4000);
+});
