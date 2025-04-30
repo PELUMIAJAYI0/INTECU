@@ -79,3 +79,55 @@ track.addEventListener("mouseleave", () => {
   restartProgressBar();
 });
 
+function toggleChatbot() {
+    const chatbox = document.getElementById("chatbot-container");
+    chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
+  }
+  
+  document.getElementById("chatbot-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const input = document.getElementById("chat-input");
+    const msg = input.value.trim();
+    if (!msg) return;
+    appendMessage("user", msg);
+    appendMessage("bot", "Typing...");
+    input.value = "";
+  
+    try {
+      const reply = await fetchAIResponse(msg);
+      const messagesDiv = document.getElementById("chatbot-messages");
+      messagesDiv.lastChild.textContent = reply;
+    } catch (error) {
+      console.error(error);
+      appendMessage("bot", "Something went wrong. Please try again later.");
+    }
+  });
+  
+  function appendMessage(sender, text) {
+    const messages = document.getElementById("chatbot-messages");
+    const p = document.createElement("p");
+    p.className = sender;
+    p.textContent = text;
+    messages.appendChild(p);
+    messages.scrollTop = messages.scrollHeight;
+  }
+  
+  async function fetchAIResponse(userInput) {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer YOUR_API_KEY",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        model: "mistral/mistral-7b-instruct",
+        messages: [
+          { role: "system", content: "You are a helpful assistant for INTECU's networking services." },
+          { role: "user", content: userInput }
+        ]
+      })
+    });
+  
+    const data = await response.json();
+    return data.choices?.[0]?.message?.content || "No response received.";
+  }
