@@ -1,80 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Learn about INTECU — our mission, core values, and commitment to driving innovation and digital transformation across Africa.">
+    <meta name="keywords"
+        content="INTECU, technology, innovation, Africa, digital transformation, core values, mission">
+    <meta name="author" content="INTECU Team">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About INTECU – Innovating Africa's Future">
+    <meta property="og:description"
+        content="Discover INTECU's mission and the values that drive our commitment to technological excellence across Africa.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg"> <!-- Replace with actual URL -->
+    <meta property="og:url" content="https://yourdomain.com/about.html">
+    <meta property="og:site_name" content="INTECU">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About INTECU – Innovating Africa's Future">
+    <meta name="twitter:description"
+        content="Explore our mission to revolutionize Africa through technology and innovation.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg"> <!-- Replace with actual URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Web Manifest (optional if you're building a PWA) -->
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <!-- Theme Color (for mobile browser address bar) -->
+    <meta name="theme-color" content="#0f1418">
+
+
+    <link href="about.css" rel="stylesheet" />
+    <title>
+        About Us
+    </title>
+
 </head>
+
 <body>
-
-    <nav>
-        <a href="/INTECU.png" class="logo">INTECU</a>
-        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul id="nav-menu" class="nav-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/careers.html">Careers</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="container_1">
-        <span class="badge">Our Purpose</span>
-        <h1 class="container_1-h1">Our Mission</h1>
-        <div class="underline"></div>
-        <p class="container_1-p">
-            At INTECU, we're on a mission to revolutionize Africa's technological landscape. We're committed to
-            delivering cutting-edge solutions that not only meet but exceed our clients' expectations, driving project
-            success and fostering innovation across the continent.
-        </p>
-    </div>
-
-    <div class="container_2">
-        <div class="card card-pan-african-impact">
-            <div class="icon-circle icon-globe" aria-hidden="true">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm5.93 6h-2.54a15.3 15.3 0 0 0-1.1-3.03A8.02 8.02 0 0 1 17.93 8zm-5.93-6c1.3 0 2.5.4 3.5 1.08a16.3 16.3 0 0 1 1.3 3.92h-4.8V2zm-2 0v5.01H6.27a16.3 16.3 0 0 1 1.3-3.92A6.98 6.98 0 0 1 9 2zm-4.66 6H7.8a15.3 15.3 0 0 0-1.1 3.03 8.02 8.02 0 0 1-2.36-3.03zm0 4a7.98 7.98 0 0 1 2.36-3.03 15.3 15.3 0 0 0 1.1 3.03H4.34zm2.54 2h2.54a15.3 15.3 0 0 0 1.1 3.03A8.02 8.02 0 0 1 6.88 14zm5.93 6c-1.3 0-2.5-.4-3.5-1.08a16.3 16.3 0 0 1-1.3-3.92h4.8V20zm2 0v-5.01h2.73a16.3 16.3 0 0 1-1.3 3.92A6.98 6.98 0 0 1 14 20zm4.66-6h-2.54a15.3 15.3 0 0 0 1.1-3.03 8.02 8.02 0 0 1 2.36 3.03zm0-4a7.98 7.98 0 0 1-2.36 3.03 15.3 15.3 0 0 0-1.1-3.03h2.54z" />
-                </svg>
+    <header role="banner">
+        <nav aria-label="Main navigation" role="navigation">
+            <a class="logo" href="/INTECU.png">
+                INTECU
+            </a>
+            <div aria-expanded="false" aria-label="Toggle menu" class="menu-toggle" id="menu-toggle" role="button"
+                tabindex="0">
+                <span>
+                </span>
+                <span>
+                </span>
+                <span>
+                </span>
             </div>
-            <h3>Pan-African Impact</h3>
-            <p>Expanding our technological reach to empower businesses across Africa, driving economic growth and digital
-                transformation throughout the continent.</p>
-        </div>
-        <div class="card card-innovative-solutions">
-            <div class="icon-circle icon-lightbulb" aria-hidden="true">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M9 21h6v-2H9v2zm3-19C7.48 2 4 5.48 4 10c0 3.87 3.13 7 7 7s7-3.13 7-7c0-4.52-3.48-8-7-8zm0 12c-2.76 0-5-2.24-5-5 0-2.21 1.79-4 4-4 2.21 0 4 1.79 4 4 0 2.76-2.24 5-5 5z" />
-                </svg>
+            <ul class="nav-menu" id="nav-menu">
+                <li>
+                    <a href="/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="/careers.html">
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="/services.html">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div aria-label="Our Mission" class="container_1" role="region">
+            <span class="badge">
+                Our Purpose
+            </span>
+            <h1 class="container_1-h1">
+                Our Mission
+            </h1>
+            <div class="underline">
             </div>
-            <h3>Innovative Solutions</h3>
-            <p>Pushing the boundaries of technology to solve complex challenges, create groundbreaking solutions, and drive
-                digital transformation for our clients.</p>
+            <p class="container_1-p">
+                At INTECU, we're on a mission to revolutionize Africa's technological landscape. We're
+                committed to
+                delivering cutting-edge solutions that not only meet but exceed our clients'
+                expectations, driving project
+                success and fostering innovation across the continent.
+            </p>
         </div>
-        <div class="card card-client-centric-approach">
-            <div class="icon-circle icon-user-friends" aria-hidden="true">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                </svg>
+        <div aria-label="Our Strategic Pillars" class="container_2" role="region">
+            <div class="card card-pan-african-impact">
+                <div aria-hidden="true" class="icon-circle icon-globe">
+                    <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm5.93 6h-2.54a15.3 15.3 0 0 0-1.1-3.03A8.02 8.02 0 0 1 17.93 8zm-5.93-6c1.3 0 2.5.4 3.5 1.08a16.3 16.3 0 0 1 1.3 3.92h-4.8V2zm-2 0v5.01H6.27a16.3 16.3 0 0 1 1.3-3.92A6.98 6.98 0 0 1 9 2zm-4.66 6H7.8a15.3 15.3 0 0 0-1.1 3.03 8.02 8.02 0 0 1-2.36-3.03zm0 4a7.98 7.98 0 0 1 2.36-3.03 15.3 15.3 0 0 0 1.1 3.03H4.34zm2.54 2h2.54a15.3 15.3 0 0 0 1.1 3.03A8.02 8.02 0 0 1 6.88 14zm5.93 6c-1.3 0-2.5-.4-3.5-1.08a16.3 16.3 0 0 1-1.3-3.92h4.8V20zm2 0v-5.01h2.73a16.3 16.3 0 0 1-1.3 3.92A6.98 6.98 0 0 1 14 20zm4.66-6h-2.54a15.3 15.3 0 0 0 1.1-3.03 8.02 8.02 0 0 1 2.36 3.03zm0-4a7.98 7.98 0 0 1-2.36 3.03 15.3 15.3 0 0 0-1.1-3.03h2.54z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>
+                    Pan-African Impact
+                </h3>
+                <p>
+                    Expanding our technological reach to empower businesses across Africa, driving
+                    economic growth and
+                    digital
+                    transformation throughout the continent.
+                </p>
             </div>
-            <h3>Client-Centric Approach</h3>
-            <p>Placing our clients' success at the heart of everything we do, ensuring that every solution is tailored to
-                their unique needs and delivers tangible value.</p>
+            <div class="card card-innovative-solutions">
+                <div aria-hidden="true" class="icon-circle icon-lightbulb">
+                    <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 21h6v-2H9v2zm3-19C7.48 2 4 5.48 4 10c0 3.87 3.13 7 7 7s7-3.13 7-7c0-4.52-3.48-8-7-8zm0 12c-2.76 0-5-2.24-5-5 0-2.21 1.79-4 4-4 2.21 0 4 1.79 4 4 0 2.76-2.24 5-5 5z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>
+                    Innovative Solutions
+                </h3>
+                <p>
+                    Pushing the boundaries of technology to solve complex challenges, create
+                    groundbreaking solutions, and
+                    drive
+                    digital transformation for our clients.
+                </p>
+            </div>
+            <div class="card card-client-centric-approach">
+                <div aria-hidden="true" class="icon-circle icon-user-friends">
+                    <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>
+                    Client-Centric Approach
+                </h3>
+                <p>
+                    Placing our clients' success at the heart of everything we do, ensuring that
+                    every solution is tailored
+                    to
+                    their unique needs and delivers tangible value.
+                </p>
+            </div>
         </div>
-    </div>
-  
-    
+        <section aria-label="Core Values" class="first-section" role="region">
+            <div class="label">
+                WHAT DRIVES US
+            </div>
+            <h1 class="first-section_h1">
+                Our Core Values
+            </h1>
+            <div class="underline">
+            </div>
+            <p class="first-section_p">
+                These principles guide our actions, shape our culture, and define how we engage with
+                our clients and communities
+                across Africa.
+            </p>
+        </section>
+        <section aria-label="Core values" class="wrapper" role="region">
+            <article class="panel panel-purple">
+                <div aria-hidden="true" class="icon-circle">
+                    <svg aria-hidden="true" class="svg-icon" focusable="false" viewbox="0 0 24 24">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                            fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Collaboration
+                </h3>
+                <p class="paragraph">
+                    We believe in the power of teamwork, fostering partnerships with our clients and
+                    within
+                    our organization.
+                </p>
+            </article>
+            <article class="panel panel-red">
+                <div aria-hidden="true" class="icon-circle">
+                    <svg aria-hidden="true" class="svg-icon" focusable="false" viewbox="0 0 24 24">
+                        <path
+                            d="M12 20c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm0-14c3.31 0 6 2.69 6 6 0 1.1-.36 2.11-.97 2.93L11 11V7h1zm-1 9h2v2h-2v-2z"
+                            fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Efficiency
+                </h3>
+                <p class="paragraph">
+                    We optimize processes and resources to deliver timely solutions without
+                    compromising on
+                    quality or performance.
+                </p>
+            </article>
+            <article class="panel panel-blue">
+                <div aria-hidden="true" class="icon-circle">
+                    <svg aria-hidden="true" class="svg-icon" focusable="false" viewbox="0 0 24 24">
+                        <path d="M8.59 16.34L13.17 12 8.59 7.66 10 6.25l6 6-6 6z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Technical Excellence
+                </h3>
+                <p class="paragraph">
+                    We maintain the highest standards of technical expertise, staying at the
+                    forefront of
+                    technological advancements.
+                </p>
+            </article>
+        </section>
+        <div class="wrapper">
+            <div class="panel panel-excellence">
+                <div class="icon-circle">
+                    <svg class="icon-symbol" aria-hidden="true" focusable="false" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 .587l3.668 7.431L24 9.748l-6 5.843L19.335 24 12 19.897 4.665 24 6 15.591 0 9.748l8.332-1.73z" />
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Excellence
+                </h3>
+                <p class="description">
+                    We are committed to delivering the highest quality in everything we do,
+                    constantly pushing the boundaries of
+                    what's possible.
+                </p>
+            </div>
+            <div class="panel panel-innovation">
+                <div class="icon-circle"><svg class="icon-symbol" aria-hidden="true" focusable="false" width="24"
+                        height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M9 21h6v-2H9v2zm3-19C7.48 2 4 5.48 4 10c0 3.87 3.13 7 7 7s7-3.13 7-7c0-4.52-3.48-8-7-8zm0 12c-2.76 0-5-2.24-5-5 0-2.21 1.79-4 4-4 2.21 0 4 1.79 4 4 0 2.76-2.24 5-5 5z" />
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Innovation
+                </h3>
+                <p class="description">
+                    We embrace creative thinking and technological advancement to develop
+                    groundbreaking solutions for complex
+                    challenges.
+                </p>
+            </div>
+            <div class="panel panel-integrity">
+                <div class="icon-circle">
+                    <svg class="icon-symbol" aria-hidden="true" focusable="false" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l9 4v6c0 5.25-3.5 9.75-9 11-5.5-1.25-9-5.75-9-11V6l9-4z" />
+                    </svg>
+                </div>
+                <h3 class="heading">
+                    Integrity
+                </h3>
+                <p class="description">
+                    We operate with honesty, transparency, and ethical conduct in all our business
+                    relationships and practices.
+                </p>
+            </div>
+        </div>
 
-    
-    
-    <script src="about.js"></script>
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">Let’s Build the Future Together</h2>
+                <p class="cta-text">
+                    Whether you're a startup, institution, or tech enthusiast, we want to collaborate with you to shape
+                    Africa’s
+                    digital destiny.
+                </p>
+                <a href="/contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+
+
+        <script src="about.js">
+        </script>
+    </main>
 </body>
+
 </html>
