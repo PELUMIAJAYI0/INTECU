@@ -50,3 +50,9 @@ scrollBtn.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     scrollBtn.classList.toggle('show-scroll', window.scrollY > 300);
 });
+
+const buttons = document.querySelectorAll('.scroll-top');
+if (buttons.length > 1) {
+    buttons[1].remove(); // Remove the second button if there are duplicates
+}
+
