@@ -79,12 +79,66 @@ track.addEventListener("mouseleave", () => {
   restartProgressBar();
 });
 
+// Chatbot functionality
+// function toggleChatbot() {
+//     const chatbox = document.getElementById("chatbot-container");
+//     chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
+//   }
+  
+//   document.getElementById("chatbot-form").addEventListener("submit", async function (e) {
+//     e.preventDefault();
+//     const input = document.getElementById("chat-input");
+//     const msg = input.value.trim();
+//     if (!msg) return;
+//     appendMessage("user", msg);
+//     appendMessage("bot", "Typing...");
+//     input.value = "";
+  
+//     try {
+//       const reply = await fetchAIResponse(msg);
+//       const messagesDiv = document.getElementById("chatbot-messages");
+//       messagesDiv.lastChild.textContent = reply;
+//     } catch (error) {
+//       console.error(error);
+//       appendMessage("bot", "Something went wrong. Please try again later.");
+//     }
+//   });
+  
+//   function appendMessage(sender, text) {
+//     const messages = document.getElementById("chatbot-messages");
+//     const p = document.createElement("p");
+//     p.className = sender;
+//     p.textContent = text;
+//     messages.appendChild(p);
+//     messages.scrollTop = messages.scrollHeight;
+//   }
+  
+//   async function fetchAIResponse(userInput) {
+//     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+//       method: "POST",
+//       headers: {
+//         "Authorization": "Bearer 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",
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify({
+//         model: "mistral/mistral-7b-instruct",
+//         messages: [
+//           { role: "system", content: "You are a helpful assistant for INTECU's networking services." },
+//           { role: "user", content: userInput }
+//         ]
+//       })
+//     });
+  
+//     const data = await response.json();
+//     return data.choices?.[0]?.message?.content || "No response received.";
+//   }
+
 function toggleChatbot() {
     const chatbox = document.getElementById("chatbot-container");
     chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
-  }
-  
-  document.getElementById("chatbot-form").addEventListener("submit", async function (e) {
+}
+
+document.getElementById("chatbot-form").addEventListener("submit", async function (e) {
     e.preventDefault();
     const input = document.getElementById("chat-input");
     const msg = input.value.trim();
@@ -92,35 +146,55 @@ function toggleChatbot() {
     appendMessage("user", msg);
     appendMessage("bot", "Typing...");
     input.value = "";
-  
+
     try {
-      const reply = await fetchAIResponse(msg);
-      const messagesDiv = document.getElementById("chatbot-messages");
-      messagesDiv.lastChild.textContent = reply;
+        const reply = await fetchAIResponse(msg); // Call updated fetchAIResponse function
+        const messagesDiv = document.getElementById("chatbot-messages");
+        messagesDiv.lastChild.textContent = reply;
     } catch (error) {
-      console.error(error);
-      appendMessage("bot", "Something went wrong. Please try again later.");
+        console.error(error);
+        appendMessage("bot", "Something went wrong. Please try again later.");
     }
-  });
-  
-  function appendMessage(sender, text) {
+});
+
+function appendMessage(sender, text) {
     const messages = document.getElementById("chatbot-messages");
     const p = document.createElement("p");
     p.className = sender;
     p.textContent = text;
     messages.appendChild(p);
     messages.scrollTop = messages.scrollHeight;
-  }
-  
-  async function fetchAIResponse(userInput) {
+}
+
+// async function fetchAIResponse(userInput) {
+//     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+//         method: "POST",
+//         headers: {
+//             "Authorization": "Bearer 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", // Replace with your actual API key
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//             model: "openai/gpt-4.1", // Replace with the model you want to use (verify model support in OpenRouter)
+//             messages: [
+//                 { role: "system", content: "You are a helpful assistant for INTECU's networking services." },
+//                 { role: "user", content: userInput }
+//             ]
+//         })
+//     });
+
+//     const data = await response.json();
+//     return data.choices?.[0]?.message?.content || "No response received."; // Handle response properly
+// }
+
+async function fetchAIResponse(userInput) {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer YOUR_API_KEY",
+        "Authorization": "Bearer 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", // Replace with your API key
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "mistral/mistral-7b-instruct",
+        model: "openai/gpt-4.1", // You can try another model here if needed
         messages: [
           { role: "system", content: "You are a helpful assistant for INTECU's networking services." },
           { role: "user", content: userInput }
@@ -128,6 +202,18 @@ function toggleChatbot() {
       })
     });
   
+    // Log the response status and body
+    console.log("Response Status:", response.status);
     const data = await response.json();
-    return data.choices?.[0]?.message?.content || "No response received.";
+    console.log("API Response Data:", data); // Check the full response
+  
+    // Check if there is a valid response
+    if (data?.choices?.[0]?.message?.content) {
+      return data.choices[0].message.content;
+    } else {
+      return "No response received.";
+    }
   }
+  
+
+
