@@ -214,6 +214,26 @@ async function fetchAIResponse(userInput) {
       return "No response received.";
     }
   }
+
+  // === Reveal on Scroll ===
+const revealElements = document.querySelectorAll('.container_1-left, .container_1-right, .contact-form-section, .cta-cards-section, .faq-section, .testimonial-section, .chatbot-container, .faq-item, .faq-question, .faq-answer, .testimonial-track, .testimonial-card, .prevBtn, .nextBtn, #progress-bar');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Reveal once
+        }
+    });
+}, {
+    threshold: 0.15,
+});
+
+revealElements.forEach(el => {
+    el.classList.add('reveal'); // start hidden
+    observer.observe(el);
+});
+
   
 
 
