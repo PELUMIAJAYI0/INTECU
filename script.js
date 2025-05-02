@@ -13,3 +13,22 @@ menuToggle.addEventListener('keydown', (e) => {
     }
 }
 );
+
+// === Reveal on Scroll ===
+const revealElements = document.querySelectorAll('.container_1, .container_2, .container_3, .container_4, .container_5, .container_6, pre-div, container_7, .footer');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Reveal once
+        }
+    });
+}, {
+    threshold: 0.15,
+});
+
+revealElements.forEach(el => {
+    el.classList.add('reveal'); // start hidden
+    observer.observe(el);
+});
