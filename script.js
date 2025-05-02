@@ -15,7 +15,7 @@ menuToggle.addEventListener('keydown', (e) => {
 );
 
 // === Reveal on Scroll ===
-const revealElements = document.querySelectorAll('.container_1, .container_2, .container_3, .container_4, .container_5, .container_6, pre-div, container_7, .footer');
+const revealElements = document.querySelectorAll('.container_1, .container_2, .container_3, .container_4, .container_5, .container_6, pre-div, container_7, .footer, .last-footer');
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
