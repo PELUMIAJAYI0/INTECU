@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="interns.css">
+    <title>Internship</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/INTECU.png" class="logo">INTECU</a>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/careers.html">Careers</a></li>
+                <!-- <li><a href="/services.html">Services</a></li> -->
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="internship-hero">
+            <div class="hero-content">
+                <h1>Launch Your Tech Journey with INTECU</h1>
+                <p>Gain real-world experience, mentorship, and hands-on projects in a professional tech environment.</p>
+                <a href="#internship-form" class="hero-button">Apply Now</a>
+            </div>
+        </section>
+
+        <section class="why-intern">
+            <div class="section-header">
+                <h2>Why Intern at INTECU?</h2>
+                <p>We equip students with real-world experience and mentorship in an innovation-driven environment.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hands-On Projects</h3>
+                    <p>Work on real projects with modern tools to build your portfolio.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Mentorship</h3>
+                    <p>Get guidance from experienced professionals in tech and innovation.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Skill Development</h3>
+                    <p>Sharpen your technical and soft skills to stand out in the industry.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Career Launch</h3>
+                    <p>Build a solid foundation and unlock future career opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentors-section" id="mentors">
+            <h2 class="section-title">Meet Our Mentors</h2>
+            <p class="section-subtitle">Learn from industry professionals who are passionate about guiding the next
+                generation.</p>
+
+            <div class="mentor-grid">
+                <div class="mentor-card animate__animated animate__fadeInUp">
+                    <img src="images/mentor1.jpg" alt="Dr. Adeola M." class="mentor-img">
+                    <h4>Dr. Adeola M.</h4>
+                    <span class="mentor-role">Head of AI Research</span>
+                    <p>15+ years in Data Science and Machine Learning across academia and industry.</p>
+                </div>
+                <div class="mentor-card animate__animated animate__fadeInUp">
+                    <img src="images/mentor2.jpg" alt="Engr. Samuel O." class="mentor-img">
+                    <h4>Engr. Samuel O.</h4>
+                    <span class="mentor-role">Lead DevOps Engineer</span>
+                    <p>Expert in DevOps pipelines, cloud infra, and full-stack architecture.</p>
+                </div>
+                <div class="mentor-card animate__animated animate__fadeInUp">
+                    <img src="images/mentor3.jpg" alt="Ms. Anita B." class="mentor-img">
+                    <h4>Ms. Anita B.</h4>
+                    <span class="mentor-role">UX/UI Strategist</span>
+                    <p>Designs user experiences that convert, mentor to 200+ design interns.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="internship-form-section" id="internship-form">
+            <div class="form-header">
+                <h2>Apply for Internship at INTECU</h2>
+                <p>Fill the form carefully and attach the required documents. All fields marked with * are mandatory.
+                </p>
+            </div>
+
+            <form id="internshipForm" class="internship-form" enctype="multipart/form-data" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" id="middleName" name="middleName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Passport Photo (JPG/PNG, max 2MB) *</label>
+                    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" required>
+                    <div class="preview-container">
+                        <img id="photoPreview" src="" alt="Image preview will appear here" style="display:none;" />
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="why">Why do you want to intern at INTECU? *</label>
+                    <textarea id="why" name="why" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">What are your goals for the internship? *</label>
+                    <textarea id="goals" name="goals" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Proposed Duration (e.g., 6 months) *</label>
+                    <input type="text" id="duration" name="duration" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="documents">Upload IT Letter, Acceptance Form, etc. (PDFs only) *</label>
+                    <input type="file" id="documents" name="documents" accept="application/pdf" multiple required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" id="agreeRules" required>
+                        I agree to comply with all INTECU internship rules and regulations *
+                    </label>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section id="faqs" class="faqs-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-toggle">Who is eligible to apply for an internship at INTECU? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We welcome students from any accredited tertiary institution who are required to complete an
+                            IT/SIWES program or who simply want hands-on experience in ICT and innovation.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-toggle">What are the required documents? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>You must upload a formal letter from your school, your acceptance letter (if available), and
+                            a recent passport photograph. All uploads must be in PDF or image formats.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-toggle">How long does the application review take? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We typically respond within 72 hours of receiving your completed application. Keep an eye on
+                            your email for our feedback.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-toggle">Is there any financial compensation? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Currently, INTECU internships are not paid. However, interns gain real-world experience,
+                            mentorship, and project involvement that greatly enhance career prospects.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-toggle">Can I apply again if I missed a previous batch? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Absolutely! We encourage you to reapply for the next batch. Our team considers every
+                            application with fresh perspective each cycle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <h2 class="section-title">Hear from Our Past Interns</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-card animate__animated animate__fadeIn active">
+                    <img src="images/intern1.jpg" alt="Esther A." class="testimonial-img">
+                    <p class="testimonial-quote"><i class="fas fa-quote-left"></i> INTECU was the best learning
+                        experience of my
+                        academic journey. I worked on real projects and was mentored by tech professionals. <i
+                            class="fas fa-quote-right"></i></p>
+                    <h4 class="testimonial-name">Esther A.</h4>
+                    <span class="testimonial-role">Backend Intern, FUTA</span>
+                </div>
+
+                <div class="testimonial-card animate__animated animate__fadeIn">
+                    <img src="images/intern2.jpg" alt="John D." class="testimonial-img">
+                    <p class="testimonial-quote"><i class="fas fa-quote-left"></i> The supportive environment at INTECU
+                        helped
+                        me grow my skills fast. I'm confident as a developer now! <i class="fas fa-quote-right"></i></p>
+                    <h4 class="testimonial-name">John D.</h4>
+                    <span class="testimonial-role">Frontend Intern, OAU</span>
+                </div>
+
+                <div class="testimonial-card animate__animated animate__fadeIn">
+                    <img src="images/intern3.jpg" alt="Zainab K." class="testimonial-img">
+                    <p class="testimonial-quote"><i class="fas fa-quote-left"></i> From daily stand-ups to weekly
+                        reviews, I
+                        felt like part of a real team. Thank you INTECU! <i class="fas fa-quote-right"></i></p>
+                    <h4 class="testimonial-name">Zainab K.</h4>
+                    <span class="testimonial-role">Fullstack Intern, UNILAG</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="brochure-timeline-section" id="timeline">
+            <h2 class="section-title">Your Internship Journey</h2>
+            <p class="section-subtitle">Get ready for a structured, rewarding, and impactful experience.</p>
+
+            <a href="docs/INTECU-Brochure.pdf" class="download-btn" download>
+                <i class="fas fa-download"></i> Download Brochure
+            </a>
+
+            <div class="timeline">
+                <div class="timeline-step animate__animated animate__fadeInLeft">
+                    <span>Step 1</span>
+                    <h4>Apply</h4>
+                    <p>Fill out the application form and await confirmation.</p>
+                </div>
+                <div class="timeline-step animate__animated animate__fadeInUp">
+                    <span>Step 2</span>
+                    <h4>Orientation</h4>
+                    <p>Meet the team and understand your role and expectations.</p>
+                </div>
+                <div class="timeline-step animate__animated animate__fadeInRight">
+                    <span>Step 3</span>
+                    <h4>Mentorship + Projects</h4>
+                    <p>Join daily stand-ups, work on live tasks, and get feedback.</p>
+                </div>
+                <div class="timeline-step animate__animated animate__fadeInUp">
+                    <span>Step 4</span>
+                    <h4>Showcase + Certificate</h4>
+                    <p>Present your project, receive your certificate, and network.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="interns.js"></script>
+</body>
+
+</html>
