@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // === Reveal on Scroll ===
-    const revealElements = document.querySelectorAll('.internship-hero');
+    const revealElements = document.querySelectorAll('.internship-hero, .why-intern, .mentors-section, .mentor-grid, .internship-form-section, .internship-form, .form-group, .faqs-section, .accordion-item, .testimonial-section, .testimonial-carousel, .brochure-timeline-section, .timeline, .footer');
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
